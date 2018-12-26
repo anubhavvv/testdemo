@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+    {% if category %}
+        <div class="row my_row_class">
+        <div class="mx-auto">
+            <p><a href="{% url 'shop:allProdCat' %}">Our Product Collection / </a> {{ category.name }}</p>
+        </div>
+        </div>
+    {% endif %}
+    <div class="mx-auto">
+    {% if category %}
+    <img class="my_image" src="{{ category.image.url }}"alt="{{ category.name }}">
+    </div>
+    <br>
+    <div>
+    <h1 class="text-center my_title">{{ category.name }}</h1>
+    <p class="text-justify">{{ category.description }}</p>
+    </div>
+    {% else %}
+    <img class="my_image my_image_padding" src="{% static 'img/banner.jpg' %}" alt="Our Product Collection">
+    <br>
+    <div>
+    <h1 class="text-center first_title">Our Product Collection</h1>
+    <p class="text-justify">Designed for fast effortless perfection, this flawless finish aqua foundation makes application at speed and on the go easy. Creates an even, radiant complexion by instantly covering imperfections with a weightless, buildable coverage that lasts all day. ... The smoothing applicator</p>
+    </div>
+    {% endif %}
+    <div class="container">
+    <div class="row mx-auto">
+        {% for product in products.object_list %}
+        <div class="my_bottom_margin col-9 col-sm-12 col-md-4 col-md-12 col-lg-4">
+            <div class="card text-center" style="width:18rem;">
+                <a href="{{ product.get_url }}"><img class="card-img-top my_image" src="{{ product.image.url }}"alt="{{ product.name }}"></a>
+                <div class="card-body">
+                    <h4>{{ product.name }}</h4>
+                    <P>Price &#x20b9 {{ product.price }}</P>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="mx-auto">
+        {% if products.paginator.num_pages > 1 %}
+        <br>
+        <div class="text-center">
+            {% for pg in products.paginator.page_range %}
+                <a href="?page={{ pg }}" class="btn btn-light btn-sm {% if products.number == pg %}active{% endif %}">{{ pg }}</a>
+            {% endfor %}
+        </div>
+    {% endif %}
+    </div>
+    </div>
+{%  endblock %}
+</body>
+</html>

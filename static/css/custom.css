@@ -1,0 +1,190 @@
+body
+{
+    font-family: "Roboto", sans-serif;
+}
+/*****NavBar****/
+.nav-item
+{
+    letter-spacing: .2em;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.dropdown-item
+{
+    letter-spacing: .2em;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+/****CategoryPage****/
+.my_row_class
+{
+    padding-top: 15px;
+}
+.my_row_class .mx-auto p
+{
+    color: black;
+}
+.my_row_class .mx-auto p a
+{
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+}
+.my_image
+{
+    width: 100%;
+    height: auto;
+}
+.my_title
+{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    padding-bottom: 10px;
+}
+.my_image_padding
+{
+    padding-top: 5px;
+}
+.first_title h1
+{
+    padding-bottom: 20px;
+    font-size: 5px;
+}
+.my_bottom_margin
+{
+    margin-bottom: 10px;
+}
+.card-body h4
+{
+    letter-spacing: .2em;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+/*****ProductPage****/
+.my_prod_row_class
+{
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.my_prod_row_class .mx-auto p
+{
+    color: black;
+    font-size: 20px;
+}
+.my_prod_row_class .mx-auto p a
+{
+    color: black;
+    font-size: 20px;
+}
+.my_prod_title
+{
+    font-size: 21px;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.my_prod_text
+{
+    padding-right: 20px;
+}
+/*****SearchPage****/
+.my_search_text
+{
+    padding-top: 20px;
+}
+
+/*****CartPage****/
+.my_custom_table
+{
+    min-width: 400px;
+    font-size: 14px;
+}
+.my_custom_thread
+{
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    background-color: #f8f9fa!important;
+}
+.custom_image
+{
+    width: 100px;
+    height: 100px;
+}
+.custom_a
+{
+    text-decoration: none;
+}
+.custom_icon
+{
+    text-decoration: none;
+    color: #868e96!important;
+}
+.my_custom_button
+{
+    margin-top: 5px;
+}
+/*****StripeButton****/
+
+.stripe-button-el
+{
+    width: 100%!important;
+    display: block!important;
+    background-color: #868e96!important;
+    border: 0px!important;
+    background-image: none!important;
+}
+.stripe-button-el span
+{
+    display: block;
+    position: relative;
+    padding: 8px 12px;
+    height: 36px!important;
+    line-height: 36px!important;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px!important;
+    color: #fff!important;
+    background-image: none;
+    background: none;
+}
+.errorlist li
+{
+    color: red;
+    font-weight: bold;
+}
+.my_custom_div
+{
+    margin-bottom: 20px!important;
+}
+.my_top_navbar_div
+{
+    height: 60px;
+    line-height: 50px;
+}
+.my_custom_menu
+{
+    text-align: right !important;
+}
+.my_custom_menu ul li
+{
+    list-style: none;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: 12px;
+    padding-right: 20px;
+    display: inline;
+}
+.my_custom_menu ul li a
+{
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: 12px;
+    padding-right: 20px;
+}

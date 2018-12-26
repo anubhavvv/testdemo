@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <div>
+    <div class="text-center">
+        <br>
+        <br>
+        <h1 class="text-center my_title">
+            Thanks for Placing your Order
+        </h1>
+        <br>
+        <br>
+        <p>Your Name is:<b>{{ customer_order.id }}</b></p>
+        <br>
+        We Have Received your Order and will bgin to processing right away.For your records an email confirmation is sent to yuo.
+        It contain the Details of the Items That you Have Purchased.
+
+    </div>
+    </div>
+
+
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div>
+    {% if not form.is_valid %}
+    <div class="mx-auto">
+        <br>
+        <h1 class="my_title text-center"> Create New Account</h1>
+        <br>
+        <div class="col-9 col-sm-9 col-md-6 col-lgg-5 mx-auto bg-light">
+            <br>
+            <p>Enter The following Information to Create The New Account</p>
+            <form method="post">
+                {% csrf_token %}
+                <P>{{ form | crispy }}</P>
+                <button type="submit" class="btn btn-secondary">Register Account</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    {% else %}
+    <div class="mx-auto">
+    <br>
+    <h1 class="my_title text-center">Your Account Has benn Created Successfully</h1>
+    <br>
+    </div>
+    <p>
+    Dear Customer,
+    <br>
+    <br>
+    Your Account has been created and it is ready to use
+    <br>
+    <a href="{% url 'shop:allProdCat' %}">Continue Shopping</a> and enjoy the variety of cushions that we have at the Perfect Cushion Store
+    </p>
+    {% endif %}
+{% endblock %}
+</body>
+</html>
