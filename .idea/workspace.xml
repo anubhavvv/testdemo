@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1086a53c-b7de-4e0f-8248-0541aec9f143" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cart/templates/email/email.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart/templates/email/email.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perfectcushion/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/perfectcushion/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perfectcushion/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/perfectcushion/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/accounts/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/accounts/signin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/top-navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/top-navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,20 +34,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/perfectcushion/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="-235">
               <caret line="142" selection-start-line="142" selection-end-line="142" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/perfectcushion/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="17" selection-start-column="3" selection-end-column="17" />
+            <state relative-caret-position="323">
+              <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
               <folding>
                 <element signature="e#638#670#0" expanded="true" />
               </folding>
@@ -274,12 +267,12 @@
       <workItem from="1548826799878" duration="1118000" />
       <workItem from="1548830234576" duration="4467000" />
       <workItem from="1548838312442" duration="1883000" />
-      <workItem from="1548906024777" duration="1666000" />
+      <workItem from="1548906024777" duration="2728000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158770000" />
+    <option name="totallyTimeSpent" value="159832000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -307,7 +300,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.30114567" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2569558" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.5335516" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -661,15 +654,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/perfectcushion/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="-235">
           <caret line="142" selection-start-line="142" selection-end-line="142" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/perfectcushion/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="3" selection-end-column="17" />
+        <state relative-caret-position="323">
+          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
           <folding>
             <element signature="e#638#670#0" expanded="true" />
           </folding>
