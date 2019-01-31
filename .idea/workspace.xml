@@ -46,7 +46,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/perfectcushion/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="78">
               <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
               <folding>
                 <element signature="e#638#670#0" expanded="true" />
@@ -267,12 +267,12 @@
       <workItem from="1548826799878" duration="1118000" />
       <workItem from="1548830234576" duration="4467000" />
       <workItem from="1548838312442" duration="1883000" />
-      <workItem from="1548906024777" duration="3101000" />
+      <workItem from="1548906024777" duration="3373000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160205000" />
+    <option name="totallyTimeSpent" value="160477000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -661,7 +661,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/perfectcushion/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="78">
           <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
           <folding>
             <element signature="e#638#670#0" expanded="true" />
