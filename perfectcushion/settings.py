@@ -28,9 +28,11 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
+    'crispy_forms',
     'order.apps.OrderConfig',
     'stripe',
     'cart.apps.CartConfig',
@@ -42,9 +44,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'crispy_forms',
+    'social_django',
 ]
 
+AUTHENTICATION_BACKENDS = [
+    #'social_core.backends.open_id.OpenIdAuth',
+    #'social_core.backends.google.GoogleOpenId',
+    'social_core.backends.github.GithubOAuth2',
+    'social_core.backends.google.GoogleOAuth2',
+    'django.contrib.auth.backends.ModelBackend',
+
+]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -53,6 +63,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'social_django.middleware.SocialAuthExceptionMiddleware',
+
 ]
 
 ROOT_URLCONF = 'perfectcushion.urls'
@@ -71,6 +83,9 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'shop.context_processors.menu_links',
                 'cart.context_processors.counter',
+                'social_django.context_processors.backends',
+                'social_django.context_processors.login_redirect',
+
             ],
         },
     },
@@ -88,6 +103,8 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+
 
 
 # Password validation
@@ -140,8 +157,18 @@ STRIPE_SECRET_KEY = 'sk_test_ZIXx3AwIndvqGEdtZSenIlQt'
 
 CRISPY_TEMPLATE_PACK='bootstrap4'
 #emailsettings
-EMAIL_HOST='smtp.mailgun.org'
-EMAIL_PORT='587'
-EMAIL_USE_TLS=True
-EMAIL_HOST_USER='postmaster@sandboxa8ca04cc3fb04cd095f5273e82fcebb1.mailgun.org'
-EMAIL_HOST_PASSWORD='c61227ef4f15d967491055440205eb69-9b463597-3ac443fc'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'jainanubhav965@gmail.com'
+EMAIL_HOST_PASSWORD = 'jain12345'
+
+LOGIN_URL = ''
+LOGIN_REDIRECT_URL='index'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY='247085497616-t37t6va57t8kpbc5ibua5rj5cpiapi1v.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET='y7wrkV-mmPRP1TAeyW7ELlVR'
+
+SOCIAL_AUTH_GITHUB_KEY='ed7f0a034707de4b27b0'
+SOCIAL_AUTH_GITHUB_SECRET='32032a8ed341734a1d979569e843306340f62ede'

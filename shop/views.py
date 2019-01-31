@@ -9,10 +9,7 @@ from django.contrib.auth import login,authenticate,logout
 
 
 def index(request):
-    text_var="this is my first project"
-    return HttpResponse(text_var)
-
-
+    return render(request,'shop/home.html',)
 
 def allProdCat(request,c_slug=None):
     c_page=None

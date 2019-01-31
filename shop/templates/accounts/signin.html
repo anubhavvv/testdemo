@@ -29,8 +29,15 @@
                 <form method="post">
                     {% csrf_token %}
                     <p>{{ form | crispy }}</p>
-                    <button type="submit" class="btn btn-secondary">Login</button>
+                    <button type="submit" class="btn btn-secondary">Login</button><br>
+                    <p>--OR--</p>
+                     <a href="{% url 'social:begin' 'github' %}">
+                         <button type="button" class="btn btn-secondary">Github</button></a>
+
+                     <a href="{% url 'social:begin' 'google-oauth2' %}">
+                         <button type="button" class="btn btn-secondary">Google</button></a>
                 </form>
+                <p><a href="">Forgotten Password</a> </p>
             </div>
     </div>
     </div>

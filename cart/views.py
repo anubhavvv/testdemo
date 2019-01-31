@@ -7,6 +7,8 @@ from django.conf import settings
 from order.models import Order,OrderItem
 from django.template.loader import get_template
 from django.core.mail import EmailMessage
+from django.contrib.auth.decorators import login_required
+
 
 def _cart_id(request):
     cart = request.session.session_key
@@ -140,7 +142,7 @@ def SendEmail(order_id):
     try:
         subject='Perfect Cushion Store New Order #{}'.format(transaction.id)
         to=['{}'.format(transaction.emailAddress)]
-        from_email="orders.perfectcushionstore.com"
+        from_email="jainanubhav965@gmail.com"
         order_information={'transaction':transaction,'order_items':order_items}
         message=get_template('email/email.html').render(order_information)
         msg=EmailMessage(subject,message,to=to,from_email=from_email)
