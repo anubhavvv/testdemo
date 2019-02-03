@@ -9,9 +9,18 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
   <br>
-    <h2><p><b>Hello {{ user.username }}!</b></p></h2>
- <p class="text-center">
+    <div>
+        <p>
+   {% if user and not user.is_anonymous %}
+     Hello {{ user.username }}!
+   {% else %}
+     I don’t think we’ve met before.
+   {% endif %}
+ </p>
+ </div>
+
      Please Click<b><a href="{% url 'shop:allProdCat' %}">here</a></b>to continue shopping.
                 </p>
 {% endblock %}

@@ -25,7 +25,7 @@ SECRET_KEY = 'ai@()v^yy4a3(0iuhn)82#djx1+(3w3htc#924@$he+g5h-4b6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['']
+ALLOWED_HOSTS = ['*']
 
 
 
@@ -165,7 +165,7 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'jainanubhav965@gmail.com'
 EMAIL_HOST_PASSWORD = 'jain12345'
 
-LOGIN_URL = ''
+LOGIN_URL = 'shop/login'
 LOGIN_REDIRECT_URL='index'
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY='247085497616-t37t6va57t8kpbc5ibua5rj5cpiapi1v.apps.googleusercontent.com'
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET='y7wrkV-mmPRP1TAeyW7ELlVR'
