@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1086a53c-b7de-4e0f-8248-0541aec9f143" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perfectcushion/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/perfectcushion/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/home.html" afterDir="false" />
-    </list>
+    <list default="true" id="1086a53c-b7de-4e0f-8248-0541aec9f143" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,12 +314,12 @@
       <workItem from="1548951391646" duration="6285000" />
       <workItem from="1548991505746" duration="625000" />
       <workItem from="1549077337213" duration="1178000" />
-      <workItem from="1549167841230" duration="845000" />
+      <workItem from="1549167841230" duration="1372000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173093000" />
+    <option name="totallyTimeSpent" value="173620000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
